@@ -1,4 +1,7 @@
 # Пример для проекта на Node.js
+name: very-good
+# on – определяет события, которые запускают воркфлоу
+on: push
 jobs:
   build: # имя взято для примера
     runs-on: ubuntu-latest
@@ -10,12 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
       # Ставим зависимости
       - run: npm install
-      # Запускаем линтер
-      #- run: npm run lint
-      # Запускаем тесты
-      # у шагов может быть имя, иногда это помогает отладке
-      # имя выводится на Github при просмотре сборки
-      # - name: run tests
+      # Запускаем тесты      
       - run: make test
-      #  run: npm test # name и run относятся к одной задаче, поэтому дефис ставится только перед name
+      # Запускаем линтер
       - run: make lint
