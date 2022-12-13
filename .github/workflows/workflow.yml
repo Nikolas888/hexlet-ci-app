@@ -12,7 +12,7 @@ jobs:
       # Устанавливаем Node.js
       - uses: actions/setup-node@v1
       # Ставим зависимости
-      - run: npm install
+      - run: make setup
       # Запускаем тесты      
       - run: make test
       # Запускаем линтер
