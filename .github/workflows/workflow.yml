@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v3
 
       # Устанавливаем 
-      - run: make install
+      - run: make2 install
       - run: make setup
 
       # Запускаем тесты      
