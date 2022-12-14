@@ -21,3 +21,8 @@ jobs:
       - run: make test
       # Запускаем линтер
       - run: make lint
+
+      - name: Run Snyk
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
