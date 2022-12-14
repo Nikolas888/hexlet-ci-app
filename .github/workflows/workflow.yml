@@ -12,6 +12,8 @@ jobs:
 
       # Устанавливаем Node.js
       - uses: actions/setup-node@v3
+          with: 
+            cache: 'npm'
 
       # Устанавливаем 
       - run: make install
