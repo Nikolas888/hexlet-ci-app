@@ -25,4 +25,4 @@ jobs:
       - name: Run Snyk
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: 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
