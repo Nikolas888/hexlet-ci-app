@@ -25,4 +25,4 @@ jobs:
       - name: Run Snyk
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: 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
+          SNYK_TOKEN: 0e412192-619c-4dc0-bd43-9098e253cded
